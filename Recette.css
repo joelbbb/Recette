@@ -9,10 +9,9 @@ body {
 }
 
 div.Contenu {
-    margin: 60px 10% 80px 10%;
     background-color:white;
-    padding: 0px 30px 30px 30px;
-    min-width: 350px;
+    margin: 40px 8px 40px 8px;
+    padding: 8px 8px 20px 8px;
     box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
     overflow: visible;
 }
@@ -78,12 +77,12 @@ table.info {
     bottom: 0;
     color: white;
     background-color: #6C829DC0;
-    height: 80px;
+    height: 50px; 
 }
 
 table.info td {
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     vertical-align: top;
 }
 
@@ -102,7 +101,7 @@ img.img {
 }
 
 div.Colonne {
-    width: 45%;
+    width: 100%;
     margin-top: 20px;
 
 }
@@ -120,12 +119,13 @@ div.Colonne h2 {
 div.Colonne1 {
     /*background-color: lightblue; */
     display: inline-block;
-    margin-right: 10%;
 }
 
+/* supprimer sur mobile
 div.Colonne2 {
     float: right;
 }
+*/
 
 div.Ingredients p{
     text-align: center;
@@ -167,4 +167,52 @@ table.Preparation tr {
     height: 40px;
 }
 
+/* Styles pour ordinateur */
+@media only screen and (min-width: 768px) {
 
+    div.Contenu {
+        margin: 60px 10% 80px 10%;
+        padding: 0px 30px 30px 30px;
+        min-width: 350px;
+        
+    }
+
+    table.info {
+        height: 80px;
+    }
+    
+    table.info td {
+        font-size: 14px;
+    }
+    
+    table.info th {
+        font-size: 16px;     
+    }
+    
+    div.Colonne {
+        width: 45%;
+    
+    }
+       
+    div.Colonne1 {
+        margin-right: 10%;
+    }
+    
+    div.Colonne2 {
+        float: right;
+    }
+    
+    
+  }
+
+  @media only screen and (min-width: 900px) {
+
+    div.Contenu {
+        margin-left: auto;
+        margin-right: auto;
+        /*margin: 60px 10% 80px 10%;*/
+        /*padding: 0px 30px 30px 30px;*/
+        width: 650px;
+    }
+    
+  }
